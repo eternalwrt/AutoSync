@@ -6,7 +6,7 @@ on:
       - '.github/workflows/openwrt_helloworld.yml'
       - 'commit/**'
   schedule:
-    - cron: 0 */4 * * *
+    - cron: 0 0 */2 * *
   repository_dispatch:
   workflow_dispatch:
     inputs:
