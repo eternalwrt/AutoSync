@@ -1,4 +1,4 @@
-name: small
+name: Openwrt HelloWorld
 
 on:
   push:
