@@ -16,7 +16,7 @@ rm -rf $1
 }
 
 git clone --depth 1 -b v5 https://github.com/sbwml/luci-app-mosdns openwrt-mosdns && mv -n openwrt-mosdns/{v2dat,mosdns,luci-app-mosdns} ./ && rm -rf openwrt-mosdns
-git clone --depth 1 -b v5 https://github.com/sbwml/openwrt_helloworld openwrt-helloworld && mv -n openwrt-helloworld/{dae,pdnsd,vmlinux-btf,luci-app-dae} ./ && rm -rf openwrt-helloworld
+git clone --depth 1 -b v5 https://github.com/sbwml/openwrt_helloworld openwrt-helloworld && mv -n openwrt-helloworld/{daed,pdnsd,vmlinux-btf,luci-app-daed} ./ && rm -rf openwrt-helloworld
 git clone --depth 1 -b master https://github.com/vernesong/OpenClash openwrt-openclash && mv -n openwrt-openclash/luci-app-openclash ./; rm -rf openwrt-openclash
 git clone --depth 1 -b main https://github.com/Openwrt-Passwall/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall  ./; rm -rf passwall1
 git clone --depth 1 -b main https://github.com/Openwrt-Passwall/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./;rm -rf passwall2
